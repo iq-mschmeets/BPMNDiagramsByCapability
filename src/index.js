@@ -21,6 +21,9 @@ function App() {
 						console.log("addDiagram ", evt);
 						alert('The "Add Diagram" feature is not complete.');
 					}}
+					onActivateDiagram={function(evt) {
+						console.log("activateDiagram ", evt);
+					}}
 				/>
 			</section>
 		</div>

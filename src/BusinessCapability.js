@@ -59,7 +59,12 @@ export default class BusinessCapability extends React.Component {
 					style={{ paddingLeft: 10, display: this.state.display }}
 				>
 					{p.rows.map(function(row, indx) {
-						let p1 = { row: row, remove: p.onRemoveDiagram, key: indx };
+						let p1 = {
+							row: row,
+							remove: p.onRemoveDiagram,
+							key: indx,
+							activateDiagram: p.activateDiagram
+						};
 						return BPMNDiagramLink(p1);
 					})}
 				</ul>

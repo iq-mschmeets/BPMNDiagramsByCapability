@@ -4,9 +4,16 @@ import ReactDOM from "react-dom";
 export default (function BPMNDiagramLink(props) {
 	const row = props.row;
 	const editHref =
-		"../request/elementForm?id=" + row.m("PSEUDO.BPMN_DIAGRAM_ID", 2);
+		"../request/elementForm?id=" + row.m("PSEUDO.BPMN_DIAGRAM_EID", 2);
+
 	function remove() {
 		props.remove(props.row);
+	}
+
+	function activateDiagram(evt) {
+		evt.preventDefault();
+		evt.stopPropagation();
+		props.activateDiagram(props.row);
 	}
 
 	return (
@@ -16,8 +23,9 @@ export default (function BPMNDiagramLink(props) {
 					title="Show Diagram"
 					data-widget="bpmn.link"
 					data-need={row.m("ELEMENT.NEED", 0)}
-					data-diagram-eid={row.m("PSEUDO.BPMN_DIAGRAM_ID", 2)}
+					data-diagram-eid={row.m("PSEUDO.BPMN_DIAGRAM_EID", 2)}
 					className="bpmn-link"
+					onClick={activateDiagram}
 				>
 					{row.m("ELEMENT_ATTR_C441.NAME", 0)}
 				</div>

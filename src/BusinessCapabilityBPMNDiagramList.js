@@ -17,6 +17,7 @@ export default function BusinessCapabilityBPMNDiagramList(props) {
 						rows={rows}
 						onRemoveDiagram={props.onRemoveDiagram}
 						onAddDiagram={props.onAddDiagram}
+						activateDiagram={props.onActivateDiagram}
 					/>
 				);
 			})}
