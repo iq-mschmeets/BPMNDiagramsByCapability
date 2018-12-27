@@ -15,11 +15,11 @@ function App() {
 					data={groupedDataSet(data.data, data.meta, 3)}
 					onRemoveDiagram={function(evt) {
 						console.log("removeDiagram ", evt);
-						alert("Remove Diagram is not complete.");
+						alert('The "Remove Diagram" feature is not complete.');
 					}}
 					onAddDiagram={function(evt) {
 						console.log("addDiagram ", evt);
-						alert("Add Diagram is not complete.");
+						alert('The "Add Diagram" feature is not complete.');
 					}}
 				/>
 			</section>
