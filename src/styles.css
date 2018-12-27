@@ -1,0 +1,54 @@
+.App {
+	font-family: sans-serif;
+	margin: 15px;
+}
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+li.bpmn-diagram-item {
+	color: #2880c0;
+	cursor: pointer;
+}
+.bpmn-link {
+	color: #2880c0;
+	cursor: pointer;
+	max-width: 85%;
+}
+.wrapper .mn {
+	/*flex: 2 0px;*/
+}
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.wrapper a {
+	order: 3;
+	margin-right: 2px;
+}
+.wrapper span {
+	/*order:1;*/
+}
+.wrapper .mn {
+	/*order:2;*/
+}
+li.bpmn-diagram-item {
+	border-bottom: 1px solid #f2f2f2;
+	padding: 4px 4px 4px 4px;
+}
+
+.cap-txt {
+	max-width: 85%;
+	cursor: pointer;
+}
+.business-cap {
+	font-weight: 500;
+	font-size: 14px;
+	/* background-color: #fffff0; */
+	layout: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 1px solid #eaeaea;
+	padding: 5px;
+}

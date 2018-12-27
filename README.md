@@ -1,2 +1,0 @@
-# BPMNDiagramsByCapability
-Created with CodeSandbox
