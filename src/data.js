@@ -119,117 +119,80 @@ export function groupedDataSet(data, meta, grouper) {
 
 export const data = {
 	data: [
+		{ d: [55628, "Advanced Technology", 119335, "notoya test bpmn"] },
+		{ d: [55628, "Advanced Technology", 112464, "Car loan Application"] },
 		{
 			d: [
-				112464,
-				"Advanced Technology : Car loan Application",
-				55628,
-				"Advanced Technology",
-				441,
-				"Notoya's test",
-				"Car loan Application"
-			]
-		},
-		{
-			d: [
-				119335,
-				"Advanced Technology : notoya test bpmn",
-				55628,
-				"Advanced Technology",
-				441,
-				"Notoya's test",
-				"notoya test bpmn"
-			]
-		},
-		{
-			d: [
-				118960,
-				"Personnel Security Investigations and Clearance Certification : Background Investigations",
 				55615,
 				"Personnel Security Investigations and Clearance Certification",
-				441,
-				"Notoya's test",
-				"Background Investigations"
-			]
-		},
-		{
-			d: [
-				118962,
-				"Personnel Security Investigations and Clearance Certification : Personnel Background Investigation",
-				55615,
-				"Personnel Security Investigations and Clearance Certification",
-				441,
-				"Notoya's test",
-				"Personnel Background Investigation"
-			]
-		},
-		{
-			d: [
-				118662,
-				"Personnel Security Investigations and Clearance Certification : Test",
-				55615,
-				"Personnel Security Investigations and Clearance Certification",
-				441,
-				"Notoya's test",
-				"Test"
-			]
-		},
-		{
-			d: [
 				118660,
-				"Personnel Security Investigations and Clearance Certification : bob",
-				55615,
-				"Personnel Security Investigations and Clearance Certification",
-				441,
-				"Notoya's test",
 				"bob"
 			]
 		},
 		{
 			d: [
-				118964,
-				"Personnel Security Investigations and Clearance Certification : ewsf",
 				55615,
 				"Personnel Security Investigations and Clearance Certification",
-				441,
-				"Notoya's test",
+				118962,
+				"Personnel Background Investigation"
+			]
+		},
+		{
+			d: [
+				55615,
+				"Personnel Security Investigations and Clearance Certification",
+				118964,
 				"ewsf"
 			]
 		},
 		{
 			d: [
-				118664,
-				"Personnel Security Investigations and Clearance Certification : test",
 				55615,
 				"Personnel Security Investigations and Clearance Certification",
-				441,
-				"Notoya's test",
+				118664,
 				"test"
 			]
-		}
+		},
+		{
+			d: [
+				55615,
+				"Personnel Security Investigations and Clearance Certification",
+				118662,
+				"Test"
+			]
+		},
+		{
+			d: [
+				55615,
+				"Personnel Security Investigations and Clearance Certification",
+				118960,
+				"Background Investigations"
+			]
+		},
+		{ d: [118917, "Test from the Capability Dashboard", "", ""] }
 	],
 	meta: [
 		{
 			pos: 1,
-			meta: "PSEUDO.BPMN_DIAGRAM_EID",
-			display: true,
+			meta: "ELEMENT.ELEMENT_ID",
+			display: false,
 			label: "ELEMENT_ID",
 			type: 2,
-			group: 2
+			group: 0
 		},
 		{
 			pos: 2,
 			meta: "ELEMENT.DESCRIPTION",
 			display: true,
-			label: "Capability",
+			label: "Business Capability",
 			type: 12,
-			group: 2
+			group: 0
 		},
 		{
 			pos: 3,
-			meta: "ELEMENT_ATTR_C190.ELEMENT_ID",
+			meta: "ELEMENT.ELEMENT_ID",
 			display: false,
-			label: "Element ID",
+			label: "ELEMENT_ID",
 			type: 2,
 			group: 1
 		},
@@ -237,36 +200,12 @@ export const data = {
 			pos: 4,
 			meta: "ELEMENT.DESCRIPTION",
 			display: true,
-			label: "Capability",
+			label: "BPMN Diagram",
 			type: 12,
 			group: 1
-		},
-		{
-			pos: 5,
-			meta: "CLASS.CLASS_ID",
-			display: false,
-			label: "441",
-			type: 2,
-			group: 0
-		},
-		{
-			pos: 6,
-			meta: "ELEMENT.NEED",
-			display: true,
-			label: "Need",
-			type: 12,
-			group: 0
-		},
-		{
-			pos: 7,
-			meta: "ELEMENT_ATTR_C441.NAME",
-			display: true,
-			label: "Diagram",
-			type: 12,
-			group: 0
 		}
 	],
-	rowCount: 8,
-	id: 3781,
-	label: "Project Business Capability Business Process"
+	rowCount: 9,
+	id: 4902,
+	label: "Business Cap Business Process All"
 };

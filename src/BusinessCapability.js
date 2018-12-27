@@ -26,6 +26,12 @@ export default class BusinessCapability extends React.Component {
 			this.state.display == "none"
 				? "glyphicon glyphicon-chevron-right"
 				: "glyphicon glyphicon-chevron-down";
+
+		// Remove rows without a value for the "child".
+		const rowSet = p.rows.filter(function(row) {
+			return row.m("ELEMENT.ELEMENT_ID", 1) != "";
+		});
+
 		return (
 			<li>
 				<div className="business-cap" onClick={this.toggle}>
@@ -42,7 +48,7 @@ export default class BusinessCapability extends React.Component {
 								className="badge"
 								title="Number of BPMN Diagrams assigned to this Business Capability"
 							>
-								{p.rows.length}
+								{rowSet.length}
 							</span>
 							<span
 								title="Add BPMN Diagram to this Capability"
@@ -61,7 +67,7 @@ export default class BusinessCapability extends React.Component {
 					className="list-unstyled"
 					style={{ paddingLeft: 10, display: this.state.display }}
 				>
-					{p.rows.map(function(row, indx) {
+					{rowSet.map(function(row, indx) {
 						let p1 = {
 							row: row,
 							remove: p.onRemoveDiagram,

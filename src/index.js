@@ -12,7 +12,7 @@ function App() {
 			<h4>Business Process Models Grouped by Capability</h4>
 			<section>
 				<BusinessCapabilityBPMNDiagramList
-					data={groupedDataSet(data.data, data.meta, 3)}
+					data={groupedDataSet(data.data, data.meta, 1)}
 					onRemoveDiagram={function(evt) {
 						console.log("removeDiagram ", evt);
 						alert('The "Remove Diagram" feature is not complete.');

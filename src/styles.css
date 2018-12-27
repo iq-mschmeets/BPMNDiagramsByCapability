@@ -27,7 +27,8 @@ li.bpmn-diagram-item {
 }
 
 li.bpmn-diagram-item {
-	border-bottom: 1px solid #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-top: none;
 	padding: 4px 4px 4px 4px;
 }
 
@@ -36,12 +37,11 @@ li.bpmn-diagram-item {
 	cursor: pointer;
 }
 .business-cap {
-	font-weight: 500;
-	font-size: 14px;
-	/* background-color: #fffff0; */
+	font-weight: 400;
 	layout: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	border: 1px solid #eaeaea;
+	border-top: none;
 	padding: 5px;
 }
