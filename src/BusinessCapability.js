@@ -31,7 +31,10 @@ export default class BusinessCapability extends React.Component {
 				<div className="business-cap" onClick={this.toggle}>
 					<div className="wrapper">
 						<div className="cap-txt">
-							<span className={gly} style={{ paddingRight: 5 }} />
+							<span
+								className={gly}
+								style={{ paddingRight: 5, color: "rgb(164, 164, 164)" }}
+							/>
 							<span>{p.label}</span>
 						</div>
 						<div>
